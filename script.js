@@ -47,7 +47,7 @@ function exibirResultado() {
     (totalPc < 21 && totalUser2 == 21)
   ) {
     mensagem = "Você Ganhou !!";
-    gif.setAttribute("style", "display : block");
+    gifWin.setAttribute("style", "display : block");
   } else if (totalUser2 == 0 && totalPc == 0) {
     mensagem = "Você não quis jogar =/";
   } else if (totalUser2 == totalPc && totalUser2 && totalPc !== 0) {
