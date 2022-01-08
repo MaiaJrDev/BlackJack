@@ -16,16 +16,18 @@
   </head>
   <body>
     <div class="quadrado">
-      <br />
-      <h1>BlackJack (21)</h1>
-      <h4>(Jogo de Cartas)</h4>
-      <br /><br />
+      <div class="titulos">
+       <h1>BlackJack (21)</h1>
+       <h4>(Jogo de Cartas)</h4>
+      </div>
+      <section class="botoes">
       <button class="btn btn-primary" id="regras" onclick="regras()">
         Regras
       </button>
       <button class="btn btn-primary" id="jogar" onclick="iniciarJogo()">
         Jogar
       </button>
+      </section>
       <h4 style="display: none" id="regrass">
         *Você jogará contra a maquina;<br />
         *serão sorteadas 2 cartas para cada na primeira rodada<br />
@@ -34,15 +36,14 @@
         *Aquele que passar dos 21 perde;<br />
         *se os dois passarem de 21 ou não alcançarem o valor , ninguem ganha;
       </h4>
-      <br /><br />
       <div id="cartas" style="display: block"></div>
       <br />
-      <div class="d-flex justify-content-center">
+      <div class='sep-botoes'>
         <button class="btn btn-success" style="display: none" id="btnSim" onclick="botonSim()">Sim</button>
         <button class="btn btn-danger" style="display: none" id="btnNao" onclick="botonNao()">Não</button>
       </div>
       <div id="resultado" style="display: none"></div>
-      <img src="images/win.gif" style="display:none" id='gif'></img> 
+      <img src="images/win.gif" style="display:none" id='gif'>
     </div>
   </body>
 </html>
